@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <script src="../lib/jshooks.js"></script>
+</head>
+<body>
+    <h1>just test</h1>
+    <script>
+       
+
+        window.addEventListener('load', (e) => {
+
+            let hooks = new Hooks(1000);
+            
+             // register a listener
+
+            hooks.listen('on_load', 1, (data, next) => {
+                console.log("#2");
+                data.saregama = 'saregama';
+                next(data);
+            });
+
+             hooks.listen('on_load', 2, (data, next) => {
+                console.log("#1");
+                data.padanisa = 'padanisa';
+                // next(data);
+            });
+
+            setTimeout(() => {
+                let dataSent = { padanisa: 'saregama' };
+                console.log("BEFORE DATA", dataSent);
+                hooks.trigger('on_load', dataSent).then(data => {
+                    console.log("FINAL DATA", data);
+                }).catch(err => console.log(err));
+            }, 2000);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "jshooks",
+  "version": "1.0.0",
+  "description": "A simple javascript module to create , listen and trigger hooks",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "author": {
+    "name": "Anees Ijaz",
+    "email": "anees@fasterbyte.net",
+    "url": "https://fasterbyte.net"
+  },
+  "license": "MIT"
+}
