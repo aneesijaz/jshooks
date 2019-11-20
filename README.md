@@ -13,7 +13,7 @@ npm install @aneesijaz/jshooks
 ## Usage
 
 ```javascript
-const Hooks = require('jshooks');
+const Hooks = require('@aneesijaz/jshooks');
 const triggerTimeout = 2000;
 const hooks = new Hooks(triggerTimeout);
             
