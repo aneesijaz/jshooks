@@ -17,7 +17,7 @@ const Hooks = require('jshooks');
 const triggerTimeout = 2000;
 const hooks = new Hooks(triggerTimeout);
             
- // register a listener
+ // register a listener - note: 2nd parameter is priority higher priority means 1st to listen
 hooks.listen('on_load', 1, (data, next) => {
     console.log("#2");
     data.saregama = 'saregama';
