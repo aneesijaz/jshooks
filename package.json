@@ -1,6 +1,6 @@
 {
   "name": "@aneesijaz/jshooks",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "A simple javascript module to create , listen and trigger hooks",
   "main": "index.js",
   "scripts": {},
@@ -20,5 +20,6 @@
     "email": "anees@fasterbyte.net",
     "url": "https://fasterbyte.net"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": ["nodejs", "hooks", "triggers", "listeners"]
 }
